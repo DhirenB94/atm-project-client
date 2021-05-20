@@ -111,12 +111,12 @@ function Map() {
       <ReactMapGL
       ref={myMap}
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
+        mapboxApiAccessToken={"pk.eyJ1IjoiZGhpcmVuYjE3IiwiYSI6ImNrb3gwczhtNjBicGMyem8yZW1vcWY4NXcifQ.rU_ur-SvJ8Oo_VBeoJi4mA"}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
         onDblClick ={handleAddClick}
         mapStyle ="mapbox://styles/dhirenb17/ckou2d2c92j4v17sed5zzij8x"
       >
-     < Geocoder mapRef={myMap} mapboxApiAccessToken={process.env.REACT_APP_MAPBOX} position="top-left" onViewportChange={handleGeocoderViewportChange}/> 
+     < Geocoder mapRef={myMap} mapboxApiAccessToken={"pk.eyJ1IjoiZGhpcmVuYjE3IiwiYSI6ImNrb3gwczhtNjBicGMyem8yZW1vcWY4NXcifQ.rU_ur-SvJ8Oo_VBeoJi4mA"} position="top-left" onViewportChange={handleGeocoderViewportChange}/> 
         <GeolocateControl
         style={geolocateControlStyle}
         positionOptions={{enableHighAccuracy: true}}
